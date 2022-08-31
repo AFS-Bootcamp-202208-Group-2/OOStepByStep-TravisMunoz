@@ -43,17 +43,17 @@ public class KlassTest {
         assertFalse(isLeader);
     }
 
-//    @Test
-//    public void should_return_true_when_isLeader_given_student_is_the_leader() {
-//        Student tom = new Student(1, "Tom", 21);
-//        Klass klass = new Klass(1);
-//        tom.join(klass);
-//        klass.assignLeader(tom);
-//
-//        boolean isLeader = klass.isLeader(tom);
-//
-//        assertTrue(isLeader);
-//    }
+    @Test
+    public void should_return_true_when_isLeader_given_student_is_the_leader() {
+        Student tom = new Student(1, "Tom", 21);
+        Klass klass = new Klass(1);
+        tom.join(klass);
+        klass.assignLeader(tom);
+
+        boolean isLeader = klass.isLeader(tom);
+
+        assertTrue(isLeader);
+    }
 //
 //    @Test
 //    public void should_print_prompt_message_when_assign_leader_given_student_is_not_in_class() throws Exception {

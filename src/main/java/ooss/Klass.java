@@ -43,4 +43,8 @@ public class Klass {
         }
         return false;
     }
+
+    public void assignLeader(Student tom) {
+        this.setClassLeader(tom);
+    }
 }
