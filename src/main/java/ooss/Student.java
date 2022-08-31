@@ -20,14 +20,18 @@ public class Student extends Person {
 
     public String introduce() {
         String message = MessageFormat.format("My name is {0}. I am {1} years old. I am a student.", super.getName(), super.getAge());
-        if (this.getKlass() !=null)
-        {
-            message += " I am in class " + this.getKlass().getId()+".";
+        if (this.getKlass() != null) {
+            if (this.getKlass().isLeader(this)) {
+                message += " I am the leader of class " + this.getKlass().getId() + ".";
+            }
+            else {
+                message += " I am in class " + this.getKlass().getId() + ".";
+            }
+
         }
+
         return message;
     }
-
-
 
 
     public boolean isIn(Klass klass) {
