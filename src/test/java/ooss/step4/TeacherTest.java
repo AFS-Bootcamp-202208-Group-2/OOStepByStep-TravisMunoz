@@ -9,15 +9,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TeacherTest {
 
-//    @Test
-//    public void should_return_false_when_belongsTo_given_teacher_does_not_teach_the_class() {
-//        Teacher jerry = new Teacher(1, "Jerry", 21);
-//        Klass klass = new Klass(1);
-//
-//        boolean belongsTo = jerry.belongsTo(klass);
-//
-//        assertFalse(belongsTo);
-//    }
+    @Test
+    public void should_return_false_when_belongsTo_given_teacher_does_not_teach_the_class() {
+        Teacher jerry = new Teacher(1, "Jerry", 21);
+        Klass klass = new Klass(1);
+
+        boolean belongsTo = jerry.belongsTo(klass);
+
+        assertFalse(belongsTo);
+    }
 //
 //    @Test
 //    public void should_return_true_when_belongsTo_given_teacher_teaches_in_the_class() {

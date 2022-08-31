@@ -9,6 +9,16 @@ public class Person {
     private final String name;
     private final int age;
 
+    public Klass getKlass() {
+        return klass;
+    }
+
+    public void setKlass(Klass klass) {
+        this.klass = klass;
+    }
+
+    private Klass klass;
+
     public Person(int id, String name, int age) {
         this.id = id;
         this.name = name;
