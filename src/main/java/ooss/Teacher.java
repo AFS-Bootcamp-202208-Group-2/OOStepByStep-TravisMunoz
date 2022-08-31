@@ -14,4 +14,8 @@ public class Teacher extends Person{
     public boolean belongsTo(Klass klass) {
         return klass.equals(this.getKlass());
     }
+
+    public void assignTo(Klass klass) {
+        this.setKlass(klass);
+    }
 }
