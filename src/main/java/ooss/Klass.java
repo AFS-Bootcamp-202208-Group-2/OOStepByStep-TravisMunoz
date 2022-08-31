@@ -37,8 +37,10 @@ public class Klass {
 
     public boolean isLeader(Student tom) {
         if (tom.getKlass() != null) {
-            return (tom.getKlass().equals(this));
+            if (tom.getKlass().equals(this)) {
+                return tom.equals(this.getClassLeader());
+            }
         }
-        else  return false;
+        return false;
     }
 }

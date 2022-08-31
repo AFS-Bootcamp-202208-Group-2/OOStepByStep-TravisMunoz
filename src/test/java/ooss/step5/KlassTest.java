@@ -31,18 +31,18 @@ public class KlassTest {
 
         assertFalse(isLeader);
     }
-//
-//    @Test
-//    public void should_return_false_when_isLeader_given_student_is_in_the_class_but_not_the_leader() {
-//        Student tom = new Student(1, "Tom", 21);
-//        Klass klass = new Klass(1);
-//        tom.join(klass);
-//
-//        boolean isLeader = klass.isLeader(tom);
-//
-//        assertFalse(isLeader);
-//    }
-//
+
+    @Test
+    public void should_return_false_when_isLeader_given_student_is_in_the_class_but_not_the_leader() {
+        Student tom = new Student(1, "Tom", 21);
+        Klass klass = new Klass(1);
+        tom.join(klass);
+
+        boolean isLeader = klass.isLeader(tom);
+
+        assertFalse(isLeader);
+    }
+
 //    @Test
 //    public void should_return_true_when_isLeader_given_student_is_the_leader() {
 //        Student tom = new Student(1, "Tom", 21);
