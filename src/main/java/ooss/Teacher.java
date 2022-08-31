@@ -48,4 +48,7 @@ public class Teacher extends Person{
         setKlassList(klass);
     }
 
+    public boolean isTeaching(Student tom) {
+        return this.getKlassList().contains(tom.getKlass());
+    }
 }
