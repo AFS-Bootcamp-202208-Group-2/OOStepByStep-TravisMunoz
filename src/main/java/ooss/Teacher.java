@@ -27,7 +27,7 @@ public class Teacher extends Person{
         String message =  MessageFormat.format("My name is {0}. I am {1} years old. I am a teacher." ,super.getName(),super.getAge());
         List<Integer> klasses = new ArrayList<>();
         String klassesDelimited;
-        if (this.getKlassList() !=null)
+        if (this.getKlassList().size() != 0)
         {
             message += " I teach Class ";
 //            klasses=  this.getKlassList().stream().map(Klass::getId).collect(Collectors.joining(" and ")
